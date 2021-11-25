@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
+function enviar(){
+  alert('você clicou no botão');
+}
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.titulo}>segundo aplicativo</Text>
+      <textinput style={styles.campo}></textinput>
+      <touchableopacity style={styles.botao} onpress={enviar}>
+        </touchableopacity>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,7 +21,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
 
   titulo:{
@@ -27,20 +32,20 @@ const styles = StyleSheet.create({
   },
   
   campo:{
-    backgroundColor '#FFA07B',
+    backgroundColor: '#FFA07A',
     textalign :'center',
     margintop: 15,
     color: '#8000000'
   },
   botao:{
-    backgroundColor: '8000000'
+    backgroundColor: '8000000',
     margin: 15,
     alignItems: 'center',
     padding: 10,
     borderradius: 20
   },
   
-  textobotao{
+  textobotao:{
     color: '#FFF',
     fontsize: 25
   },
