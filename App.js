@@ -18,4 +18,32 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  titulo:{
+    fontSize: 30,
+    textalign: 'center',
+    margintop: 15,
+    color: '#800000'
+  },
+  
+  campo:{
+    backgroundColor '#FFA07B',
+    textalign :'center',
+    margintop: 15,
+    color: '#8000000'
+  },
+  botao:{
+    backgroundColor: '8000000'
+    margin: 15,
+    alignItems: 'center',
+    padding: 10,
+    borderradius: 20
+  },
+  
+  textobotao{
+    color: '#FFF',
+    fontsize: 25
+  },
 });
+
+
