@@ -1,16 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
 function enviar(){
-  alert('você clicou no botão');
+  alert('você clicou no botão!');
 }
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.titulo}>segundo aplicativo</Text>
-      <textinput style={styles.campo}></textinput>
-      <touchableopacity style={styles.botao} onpress={enviar}>
-        </touchableopacity>
+      <TextInput style={styles.campo}></TextInput>
+      <TouchableOpacity style={styles.botao} onPress={enviar}>
+        <Text style={styles.textobotao}>mostrar</Text>
+        </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );
@@ -33,16 +34,18 @@ const styles = StyleSheet.create({
   
   campo:{
     backgroundColor: '#FFA07A',
-    textalign :'center',
-    margintop: 15,
-    color: '#8000000'
+    fontSize:20,
+    margin: 15,
+    padding: 10,
+    color: '#FFF',
+    borderRadius: 20
   },
   botao:{
-    backgroundColor: '8000000',
+    backgroundColor: '#800000',
     margin: 15,
     alignItems: 'center',
     padding: 10,
-    borderradius: 20
+    borderRadius: 20
   },
   
   textobotao:{
